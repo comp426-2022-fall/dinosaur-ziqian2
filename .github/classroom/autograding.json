@@ -3,9 +3,9 @@
     {
       "name": "Image file present",
       "setup": "",
-      "run": "ls",
+      "run": "ls | tr [:upper:] [:lower:]",
       "input": "",
-      "output": ".*\\.(jpg|JPG|jpeg|JPEG|png|PNG|gif|GIF|tif|TIF|bmp|BMP|eps|EPS|psd|PSD|xcf|XCF|ai|AI|raw|RAW|webp|WEBP)",
+      "output": ".*\\.(jpg|jpeg|png|gif|tif|bmp|eps|psd|xcf|ai|raw|webp)",
       "comparison": "regex",
       "timeout": 10,
       "points": 100
